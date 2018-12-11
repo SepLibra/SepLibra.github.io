@@ -3,6 +3,25 @@
   
     
     <entry>
+      <title>MarkDown Sample</title>
+      <link href="/2018/12/11/2018/20181211_Markdown%20Sample/"/>
+      <url>/2018/12/11/2018/20181211_Markdown%20Sample/</url>
+      
+        <content type="html"><![CDATA[<p><strong>strong text</strong><br><em>emphasized text</em><br><del>strikethrough text</del></p><p><code>abcdefghijklmnopqrstuvwxyz</code></p><ul><li style="list-style: none"><input type="checkbox"> abcdefghijklmnopqrstuvwxyz</li></ul><h1 id="Heading"><a href="#Heading" class="headerlink" title="Heading"></a>Heading</h1><h2 id="Heading-1"><a href="#Heading-1" class="headerlink" title="Heading"></a>Heading</h2><h3 id="Heading-2"><a href="#Heading-2" class="headerlink" title="Heading"></a>Heading</h3><h4 id="Heading-3"><a href="#Heading-3" class="headerlink" title="Heading"></a>Heading</h4><h5 id="Heading-4"><a href="#Heading-4" class="headerlink" title="Heading"></a>Heading</h5><h6 id="Heading-5"><a href="#Heading-5" class="headerlink" title="Heading"></a>Heading</h6><p>{++bnbn++}</p><ul><li>List item</li><li>List item</li><li>List item</li></ul><h5 id="dfsdfds"><a href="#dfsdfds" class="headerlink" title="dfsdfds"></a><em>dfsdfds</em></h5><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><ul><li style="list-style: none"><input type="checkbox"> List item</li><li><p>[ ] List item</p><blockquote><p>Blockquote<br>Blockquote</p></blockquote></li></ul><table><thead><tr><th>a</th><th>b</th><th>c</th></tr></thead><tbody><tr><td>e</td><td>d</td><td>f</td></tr></tbody></table>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+            <tag> Loading... </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>hexo-nextの関連設定</title>
       <link href="/2018/12/10/hexo-next%E3%81%AE%E9%96%A2%E9%80%A3%E8%A8%AD%E5%AE%9A/"/>
       <url>/2018/12/10/hexo-next%E3%81%AE%E9%96%A2%E9%80%A3%E8%A8%AD%E5%AE%9A/</url>
@@ -18,23 +37,6 @@
             <tag> next </tag>
             
             <tag> tags </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>MarkDown Sample</title>
-      <link href="/2018/12/10/Markdown%20Sample/"/>
-      <url>/2018/12/10/Markdown%20Sample/</url>
-      
-        <content type="html"><![CDATA[<p><strong>strong text</strong></p><p><em>emphasized text</em></p><h1 id="Heading"><a href="#Heading" class="headerlink" title="Heading"></a>Heading</h1><h2 id="Heading-1"><a href="#Heading-1" class="headerlink" title="Heading"></a>Heading</h2><h3 id="Heading-2"><a href="#Heading-2" class="headerlink" title="Heading"></a>Heading</h3><h4 id="Heading-3"><a href="#Heading-3" class="headerlink" title="Heading"></a>Heading</h4><h5 id="Heading-4"><a href="#Heading-4" class="headerlink" title="Heading"></a>Heading</h5><h6 id="Heading-5"><a href="#Heading-5" class="headerlink" title="Heading"></a>Heading</h6><p><del>strikethrough text</del></p><ul><li>List item</li><li>List item</li><li><p>List item</p></li><li><p>[ ] List item</p></li><li style="list-style: none"><input type="checkbox"> List item</li></ul><blockquote><p>Blockquote<br>Blockquote</p></blockquote><table><thead><tr><th>a</th><th>b</th></tr></thead><tbody><tr><td>c</td><td>d</td></tr></tbody></table><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">test</span><br><span class="line">test</span><br></pre></td></tr></table></figure><p>insert image</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> markdown </tag>
             
         </tags>
       
