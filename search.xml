@@ -3,12 +3,45 @@
   
     
     <entry>
+      <title>sql基礎</title>
+      <link href="/2018/12/11/2018/1211_sql%E5%9F%BA%E7%A4%8E/"/>
+      <url>/2018/12/11/2018/1211_sql%E5%9F%BA%E7%A4%8E/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> oracle </category>
+          
+          <category> 1Z0-061 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> bronze </tag>
+            
+            <tag> sql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>hexo-nextの関連設定</title>
       <link href="/2018/12/11/2018/1211_hexo-next%E3%81%AE%E9%96%A2%E9%80%A3%E8%A8%AD%E5%AE%9A/"/>
       <url>/2018/12/11/2018/1211_hexo-next%E3%81%AE%E9%96%A2%E9%80%A3%E8%A8%AD%E5%AE%9A/</url>
       
-        <content type="html"><![CDATA[<p>Hexo-nextの関連設定は以下のとおりです。</p><ul><li>themeの変更</li><li>tagsの設定</li><li>local_searchの設定</li></ul><h4 id="・themeの変更"><a href="#・themeの変更" class="headerlink" title="・themeの変更"></a>・themeの変更</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  rootの_config.yml</span><br><span class="line">内容</span><br><span class="line">  theme: next</span><br></pre></td></tr></table></figure><h4 id="・tagsの設定"><a href="#・tagsの設定" class="headerlink" title="・tagsの設定"></a>・tagsの設定</h4><h5 id="tagsページを作成する"><a href="#tagsページを作成する" class="headerlink" title="tagsページを作成する"></a>tagsページを作成する</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page &quot;tags&quot;</span><br></pre></td></tr></table></figure><h5 id="作成したindex-mdのtypeにtagsを記入する。"><a href="#作成したindex-mdのtypeにtagsを記入する。" class="headerlink" title="作成したindex.mdのtypeにtagsを記入する。"></a>作成した<code>index.md</code>のtypeにtagsを記入する。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  source\tags\index.md</span><br><span class="line">内容</span><br><span class="line">  ---</span><br><span class="line">  title: Tag cloud</span><br><span class="line">  date: 2018-12-10</span><br><span class="line">  type: &quot;tags&quot;</span><br><span class="line">  comments:</span><br><span class="line">  ---</span><br></pre></td></tr></table></figure><h5 id="nextの-config-ymlのmenuにtagsを追加する。"><a href="#nextの-config-ymlのmenuにtagsを追加する。" class="headerlink" title="nextの_config.ymlのmenuにtagsを追加する。"></a>nextの<code>_config.yml</code>のmenuにtagsを追加する。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  themes\next\_config.yml</span><br><span class="line">内容</span><br><span class="line">  menu:</span><br><span class="line">    home: / || home</span><br><span class="line">    tags: /tags/ || tags</span><br></pre></td></tr></table></figure><h5 id="New-MDファイルに関連したtagを記入する。"><a href="#New-MDファイルに関連したtagを記入する。" class="headerlink" title="New-MDファイルに関連したtagを記入する。"></a>New-MDファイルに関連したtagを記入する。</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: new-title</span><br><span class="line">date: 2018-12-10 14:24:49</span><br><span class="line">tags: [hexo,next,tags]</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h4 id="・local-searchの設定"><a href="#・local-searchの設定" class="headerlink" title="・local_searchの設定"></a>・local_searchの設定</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  themes\next\_config.yml</span><br><span class="line">内容</span><br><span class="line">  local_search:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure><p>以上</p>]]></content>
+        <content type="html"><![CDATA[<p>Hexo-nextの関連設定は以下のとおりです。<br><!-- TOC --></p><ul><li><a href="#theme%E3%81%AE%E5%A4%89%E6%9B%B4">themeの変更</a></li><li><a href="#tags%E3%81%AE%E8%A8%AD%E5%AE%9A">tagsの設定</a></li><li><a href="#local_search%E3%81%AE%E8%A8%AD%E5%AE%9A">local_searchの設定</a></li></ul><!-- /TOC --><h4 id="themeの変更"><a href="#themeの変更" class="headerlink" title="themeの変更"></a>themeの変更</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  rootの_config.yml</span><br><span class="line">内容</span><br><span class="line">  theme: next</span><br></pre></td></tr></table></figure><h4 id="tagsの設定"><a href="#tagsの設定" class="headerlink" title="tagsの設定"></a>tagsの設定</h4><ul><li>tagsページを作成する</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page &quot;tags&quot;</span><br></pre></td></tr></table></figure><ul><li>作成した<code>index.md</code>のtypeにtagsを記入する。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  source\tags\index.md</span><br><span class="line">内容</span><br><span class="line">  ---</span><br><span class="line">  title: Tag cloud</span><br><span class="line">  date: 2018-12-10</span><br><span class="line">  type: &quot;tags&quot;</span><br><span class="line">  comments:</span><br><span class="line">  ---</span><br></pre></td></tr></table></figure><ul><li>nextの<code>_config.yml</code>のmenuにtagsを追加する。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  themes\next\_config.yml</span><br><span class="line">内容</span><br><span class="line">  menu:</span><br><span class="line">    home: / || home</span><br><span class="line">    tags: /tags/ || tags</span><br></pre></td></tr></table></figure><ul><li>New-MDファイルに関連したtagを記入する。</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: new-title</span><br><span class="line">date: 2018-12-10 14:24:49</span><br><span class="line">tags: [hexo,next,tags]</span><br><span class="line">---</span><br></pre></td></tr></table></figure><h4 id="local-searchの設定"><a href="#local-searchの設定" class="headerlink" title="local_searchの設定"></a>local_searchの設定</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  themes\next\_config.yml</span><br><span class="line">内容</span><br><span class="line">  local_search:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure><p>以上</p>]]></content>
       
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
       
       
         <tags>
