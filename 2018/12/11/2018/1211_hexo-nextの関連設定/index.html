@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="藍屋の麒麟">
 <meta property="og:description" content="HexoとNextテーマに関して設定されているメモ内容です。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-11T15:54:23.149Z">
+<meta property="og:updated_time" content="2018-12-12T05:46:37.899Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-nextの関連設定">
 <meta name="twitter:description" content="HexoとNextテーマに関して設定されているメモ内容です。">
@@ -410,12 +410,24 @@
                 
               
 
-              <time title="Created: 2018-12-11 14:24:49 / Modified: 23:54:23" itemprop="dateCreated datePublished" datetime="2018-12-11T14:24:49+08:00">2018-12-11</time>
+              <time title="Created: 2018-12-11 14:24:49" itemprop="dateCreated datePublished" datetime="2018-12-11T14:24:49+08:00">2018-12-11</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-12 13:46:37" itemprop="dateModified" datetime="2018-12-12T13:46:37+08:00">2018-12-12</time>
               
             
           </span>
@@ -473,26 +485,26 @@
 <li><a href="#theme%E3%81%AE%E5%A4%89%E6%9B%B4">themeの変更</a></li>
 <li><a href="#tags%E3%81%AE%E8%A8%AD%E5%AE%9A">tagsの設定</a></li>
 <li><a href="#local_search%E3%81%AE%E8%A8%AD%E5%AE%9A">local_searchの設定</a></li>
+<li><a href="#%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AEcopy%E3%83%9C%E3%82%BF%E3%83%B3">コードのCopyボタン</a></li>
 </ul>
 <!-- /TOC -->
-<h4 id="themeの変更"><a href="#themeの変更" class="headerlink" title="themeの変更"></a>themeの変更</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  rootの_config.yml</span><br><span class="line">内容</span><br><span class="line">  theme: next</span><br></pre></td></tr></table></figure>
+<h4 id="themeの変更"><a href="#themeの変更" class="headerlink" title="themeの変更"></a>themeの変更</h4><p><code>rootの_config.yml</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure></p>
 <h4 id="tagsの設定"><a href="#tagsの設定" class="headerlink" title="tagsの設定"></a>tagsの設定</h4><ul>
-<li>tagsページを作成する</li>
-</ul>
+<li><p>tagsページを作成する</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page &quot;tags&quot;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>作成した<code>index.md</code>のtypeにtagsを記入する。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  source\tags\index.md</span><br><span class="line">内容</span><br><span class="line">  ---</span><br><span class="line">  title: Tag cloud</span><br><span class="line">  date: 2018-12-10</span><br><span class="line">  type: &quot;tags&quot;</span><br><span class="line">  comments:</span><br><span class="line">  ---</span><br></pre></td></tr></table></figure>
-<ul>
-<li>nextの<code>_config.yml</code>のmenuにtagsを追加する。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  themes\next\_config.yml</span><br><span class="line">内容</span><br><span class="line">  menu:</span><br><span class="line">    home: / || home</span><br><span class="line">    tags: /tags/ || tags</span><br></pre></td></tr></table></figure>
-<ul>
-<li>New-MDファイルに関連したtagを記入する。</li>
-</ul>
+</li>
+<li><p>作成した<code>index.md</code>のtypeにtagsを記入する。<br><code>source\tags\index.md</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Tag cloud</span><br><span class="line">date: 2018-12-10</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">comments:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>nextの<code>_config.yml</code>のmenuにtagsを追加する。<br><code>themes\next\_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  tags: /tags/ || tags</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>New-MDファイルに関連したtagを記入する。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: new-title</span><br><span class="line">date: 2018-12-10 14:24:49</span><br><span class="line">tags: [hexo,next,tags]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h4 id="local-searchの設定"><a href="#local-searchの設定" class="headerlink" title="local_searchの設定"></a>local_searchの設定</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">対象</span><br><span class="line">  themes\next\_config.yml</span><br><span class="line">内容</span><br><span class="line">  local_search:</span><br><span class="line">    enable: true</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="local-searchの設定"><a href="#local-searchの設定" class="headerlink" title="local_searchの設定"></a>local_searchの設定</h4><p><code>themes\next\_config.yml</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">local_search:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure></p>
+<h4 id="コードのCopyボタン"><a href="#コードのCopyボタン" class="headerlink" title="コードのCopyボタン"></a>コードのCopyボタン</h4><p><code>themes\next\_config.yml</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">copy_button:</span><br><span class="line">  enable: true</span><br><span class="line">  # Show text copy result</span><br><span class="line">  show_result: true</span><br></pre></td></tr></table></figure></p>
 <p>以上</p>
 
       
@@ -601,6 +613,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Hiroshi">
+            
               <p class="site-author-name" itemprop="name">Hiroshi</p>
               <p class="site-description motion-element" itemprop="description">豆知識Tips</p>
           </div>
@@ -631,14 +645,6 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
                     <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
@@ -651,12 +657,6 @@
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
                     
-                    
-                      
-                    
-                      
-                    
-                      
                     
                       
                     
@@ -718,7 +718,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#themeの変更"><span class="nav-number">1.</span> <span class="nav-text">themeの変更</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tagsの設定"><span class="nav-number">2.</span> <span class="nav-text">tagsの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#local-searchの設定"><span class="nav-number">3.</span> <span class="nav-text">local_searchの設定</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#themeの変更"><span class="nav-number">1.</span> <span class="nav-text">themeの変更</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tagsの設定"><span class="nav-number">2.</span> <span class="nav-text">tagsの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#local-searchの設定"><span class="nav-number">3.</span> <span class="nav-text">local_searchの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#コードのCopyボタン"><span class="nav-number">4.</span> <span class="nav-text">コードのCopyボタン</span></a></li></ol></div>
             
 
           </div>
@@ -1234,6 +1234,75 @@
   
 
   
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('Copied')
+          else $(this).text('Copy failed')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('Copy')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
 
   
 
