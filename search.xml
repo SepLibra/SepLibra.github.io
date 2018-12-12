@@ -3,16 +3,16 @@
   
     
     <entry>
-      <title>sql基礎</title>
-      <link href="/2018/12/11/2018/1211_sql%E5%9F%BA%E7%A4%8E/"/>
-      <url>/2018/12/11/2018/1211_sql%E5%9F%BA%E7%A4%8E/</url>
+      <title>12cSQL基礎</title>
+      <link href="/2018/12/12/2018/1211_12cSql01/"/>
+      <url>/2018/12/12/2018/1211_12cSql01/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h4 id="副問合せ"><a href="#副問合せ" class="headerlink" title="副問合せ"></a>副問合せ</h4><ul><li>副問合せで使用する列は、1つでなくても構いません<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ENAME, DEPTNO, JOB</span><br><span class="line"><span class="keyword">FROM</span>   EMP</span><br><span class="line"><span class="keyword">WHERE</span>  (DEPTNO,JOB)  = (<span class="keyword">SELECT</span> DEPTNO,JOB</span><br><span class="line">                        <span class="keyword">FROM</span>   EMP</span><br><span class="line">                        <span class="keyword">WHERE</span>  ENAME =<span class="string">'SCOTT'</span>);</span><br></pre></td></tr></table></figure></li></ul>]]></content>
       
       
       <categories>
           
-          <category> oracle </category>
+          <category> Oracle </category>
           
           <category> 1Z0-061 </category>
           
@@ -21,9 +21,9 @@
       
         <tags>
             
-            <tag> bronze </tag>
-            
             <tag> sql </tag>
+            
+            <tag> Bronze </tag>
             
         </tags>
       
