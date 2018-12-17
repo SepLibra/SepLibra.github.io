@@ -109,14 +109,14 @@
 
 
   <meta name="description" content="12cSQL基礎の勉強メモ帳">
-<meta name="keywords" content="Bronze,sql">
+<meta name="keywords" content="Bronze,12cSQL基礎">
 <meta property="og:type" content="article">
 <meta property="og:title" content="12cSQL基礎">
 <meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/12cSql01/index.html">
 <meta property="og:site_name" content="藍屋の麒麟">
 <meta property="og:description" content="12cSQL基礎の勉強メモ帳">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-13T01:42:52.296Z">
+<meta property="og:updated_time" content="2018-12-17T09:04:29.544Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="12cSQL基礎">
 <meta name="twitter:description" content="12cSQL基礎の勉強メモ帳">
@@ -372,7 +372,7 @@
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hiroshi">
-      <meta itemprop="description" content="知識Tips">
+      <meta itemprop="description" content="豆知識Tips">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -427,7 +427,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-13 09:42:52" itemprop="dateModified" datetime="2018-12-13T09:42:52+08:00">2018-12-13</time>
+                <time title="Modified: 2018-12-17 17:04:29" itemprop="dateModified" datetime="2018-12-17T17:04:29+08:00">2018-12-17</time>
               
             
           </span>
@@ -487,7 +487,7 @@
       
 
       
-        <div class="note info"><p>info</p></div>
+        <div class="note info"></div>
 <h4 id="副問合せ"><a href="#副問合せ" class="headerlink" title="副問合せ"></a>副問合せ</h4><ul>
 <li>副問合せで使用する列は、1つでなくても構いません<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> ENAME, DEPTNO, JOB</span><br><span class="line"><span class="keyword">FROM</span>   EMP</span><br><span class="line"><span class="keyword">WHERE</span>  (DEPTNO,JOB)  = (<span class="keyword">SELECT</span> DEPTNO,JOB</span><br><span class="line">                        <span class="keyword">FROM</span>   EMP</span><br><span class="line">                        <span class="keyword">WHERE</span>  ENAME =<span class="string">'SCOTT'</span>);</span><br></pre></td></tr></table></figure>
 </li>
@@ -517,7 +517,7 @@
           
             <a href="/tags/Bronze/" rel="tag"># Bronze</a>
           
-            <a href="/tags/sql/" rel="tag"># sql</a>
+            <a href="/tags/12cSQL基礎/" rel="tag"># 12cSQL基礎</a>
           
         </div>
       
@@ -539,6 +539,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/4plus1/2018/12csqlp0103/" rel="prev" title="学習チェック①">
+                学習チェック① <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -600,7 +604,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Hiroshi">
             
               <p class="site-author-name" itemprop="name">Hiroshi</p>
-              <p class="site-description motion-element" itemprop="description">知識Tips</p>
+              <p class="site-description motion-element" itemprop="description">豆知識Tips</p>
           </div>
 
           
@@ -610,7 +614,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -702,7 +706,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#副問合せ"><span class="nav-number">1.</span> <span class="nav-text">副問合せ</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#副問合せ"><span class="nav-text">副問合せ</span></a></li></ol></div>
             
 
           </div>
