@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="en">
+<html class="theme-next gemini use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,7 +67,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.ico?v=6.6.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16 16.ico?v=6.6.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico?v=6.6.0">
 
 
   <link rel="mask-icon" href="/images/logo.svg?v=6.6.0" color="#222">
@@ -84,7 +84,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Gemini',
     version: '6.6.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -108,18 +108,20 @@
 
 
 
-  <meta name="description" content="12cSQL基礎・学習チェック     第章.">
-<meta name="keywords" content="Bronze,12cSQL基礎">
+  <meta name="description" content="12cSQL・学習チェック     第01章.リレーショナルデータベースの概要  第02章.SELECT文の使用によるデータの取得  第章.">
+<meta name="keywords" content="Bronze,12cSQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学習チェック①">
+<meta property="og:title" content="学習チェック01-03">
 <meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/12cSqlP0103/index.html">
-<meta property="og:site_name" content="藍屋の麒麟">
-<meta property="og:description" content="12cSQL基礎・学習チェック     第章.">
+<meta property="og:site_name" content="SepLibra">
+<meta property="og:description" content="12cSQL・学習チェック     第01章.リレーショナルデータベースの概要  第02章.SELECT文の使用によるデータの取得  第章.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-17T14:30:12.681Z">
+<meta property="og:image" content="https://seplibra.github.io/images/2018/12/erdiagram.png">
+<meta property="og:updated_time" content="2018-12-19T04:03:48.033Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学習チェック①">
-<meta name="twitter:description" content="12cSQL基礎・学習チェック     第章.">
+<meta name="twitter:title" content="学習チェック01-03">
+<meta name="twitter:description" content="12cSQL・学習チェック     第01章.リレーショナルデータベースの概要  第02章.SELECT文の使用によるデータの取得  第章.">
+<meta name="twitter:image" content="https://seplibra.github.io/images/2018/12/erdiagram.png">
 
 
 
@@ -136,7 +138,7 @@
   };
 </script>
 
-  <title>学習チェック① | 藍屋の麒麟</title>
+  <title>学習チェック01-03 | SepLibra</title>
   
 
 
@@ -196,7 +198,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">藍屋の麒麟</span>
+        <span class="site-title">SepLibra</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -305,9 +307,6 @@
   
 
   
-    
-
-  
 
   
     <div class="site-search">
@@ -349,6 +348,9 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+            
+
+          
           <div id="content" class="content">
             
 
@@ -377,7 +379,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="藍屋の麒麟">
+      <meta itemprop="name" content="SepLibra">
     </span>
 
     
@@ -385,7 +387,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">学習チェック①
+          <h1 class="post-title" itemprop="name headline">学習チェック01-03
               
             
           </h1>
@@ -427,7 +429,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-17 22:30:12" itemprop="dateModified" datetime="2018-12-17T22:30:12+08:00">2018-12-17</time>
+                <time title="Modified: 2018-12-19 12:03:48" itemprop="dateModified" datetime="2018-12-19T12:03:48+08:00">2018-12-19</time>
               
             
           </span>
@@ -485,11 +487,89 @@
       
 
       
-        <p><strong>12cSQL基礎・学習チェック</strong></p>
+        <p><strong>12cSQL・学習チェック</strong></p>
 <blockquote>
 </blockquote>
-<p>  第章.</p>
+<p>  第01章.リレーショナルデータベースの概要<br>  第02章.SELECT文の使用によるデータの取得<br>  第章.</p>
 <a id="more"></a>
+<h5 id="リレーショナルデータベースの概要"><a href="#リレーショナルデータベースの概要" class="headerlink" title="リレーショナルデータベースの概要"></a>リレーショナルデータベースの概要</h5><ul>
+<li>データ構造が定義されたメソッドが組み込まれているデータベースは何か<blockquote>
+<p>オブジェクト型リレーショナルデータベース（OODB）モデル</p>
+</blockquote>
+</li>
+<li>E.F.Coddのルールをサポートするデータベースは何か<blockquote>
+<p>リレーショナルデータベース（RDB）モデル</p>
+</blockquote>
+</li>
+<li>RDBの特徴は何か<blockquote>
+<p>データは表として格納される<br>表の構成要素は「行」と「列」である<br>複数の表の間の関係を定義できる</p>
+</blockquote>
+</li>
+<li>OODBの特徴は何か<blockquote>
+<p>データ構造が定義されたメソッドが組み込まれている<br>同じデータベースで複数のオブジェクトをサポートする<br>リレーショナル型データベースの機能を拡張しつつ完全な互換性を持つ</p>
+</blockquote>
+</li>
+<li>このERモデルはだれが考案したものか<br><img src="/images/2018/12/erdiagram.png" alt="erDiagram"><blockquote>
+<p>Peter Chen</p>
+</blockquote>
+</li>
+<li>このモデルでキー属性はどれか<blockquote>
+<p>EMPNO。<br>※EMPNOはEMPLOYEES表の行を一意に識別できるキーです。エンティティにおいて「キー」と呼ばれるものには主キー、一意キー、外部キーとありますが、単に「キー」と呼ばれた場合は主キーを指すものと考えましょう</p>
+</blockquote>
+</li>
+<li>導出属性はどれか<blockquote>
+<p>AGE<br>※AGE（年齢）は今日の日付から誕生日（BIRTHDAY）を減算することで求める（導出する）ことができるので導出属性です。</p>
+</blockquote>
+</li>
+<li>EMPOLYEESは弱いエンティティか<blockquote>
+<p>いいえ<br>他のエンティティの操作に影響を受けるエンティティを弱いエンティティといいます</p>
+</blockquote>
+</li>
+<li>コンポジット属性とはどのようなものか<blockquote>
+<p>複数の属性を組み合わせたもの</p>
+</blockquote>
+</li>
+<li>エンティティを表としたら属性は何に相当するか<blockquote>
+<p>列</p>
+</blockquote>
+</li>
+<li>DML(データ<strong>操作</strong>言語)<blockquote>
+<p>Data Manipulation Language：表の行を操作する</p>
+<blockquote>
+<p> SELECT<br>  INSERT<br>  UPDATE<br>  DELETE<br>  MERGE*</p>
+</blockquote>
+</blockquote>
+</li>
+<li>DDL(データ<strong>定義</strong>言語)<blockquote>
+<p>Data Definition Language:表などのオブジェクトを作成、変更、削除する</p>
+<blockquote>
+<p> CREATE<br>  ALTER<br>  DROP<br>  RENAME<br>  TRUNCATE<br>  COMMENT*</p>
+</blockquote>
+</blockquote>
+</li>
+<li>DCL（データ<strong>制御</strong>言語）<blockquote>
+<p>Data Control Language:データベースに対するアクセル権の付与や取消を行う</p>
+<blockquote>
+<p> GRANT<em><br>  REVOKE</em></p>
+</blockquote>
+</blockquote>
+</li>
+<li>トランザクション制御<blockquote>
+<p>トランザクションの確認や取消などの制御を行う</p>
+<blockquote>
+<p> COMMIT<br>  ROLLBACK<br>  SAVEPOINT</p>
+</blockquote>
+</blockquote>
+<h4 id="SELECT文の使用によるデータの取得"><a href="#SELECT文の使用によるデータの取得" class="headerlink" title="SELECT文の使用によるデータの取得"></a>SELECT文の使用によるデータの取得</h4></li>
+<li><code>SELECT</code>句に指定できるものは何か</li>
+<li><code>SELECT</code>句に式を指定した場合の見出しはどのようになるか</li>
+<li><code>SELECT name AS &quot;名前&quot; FROM employees;</code>としたときに、列の見出しはどのようになるか</li>
+<li>列別名を二重引用符で囲むことによってどのような見出しを作ることができるか</li>
+<li>文字を連結する演算子は何か</li>
+<li>出力結果から列の値の重複を省きたい場合はどのようなキーワードを使用するか</li>
+<li>１つの<code>SELECT</code>句に<code>DISTINCT</code>キーワードは何回記述できるか</li>
+<li><code>500+salary*12</code>と<code>(500+salary)*12</code>の結果は同じか</li>
+</ul>
 
       
     </div>
@@ -515,7 +595,7 @@
           
             <a href="/tags/Bronze/" rel="tag"># Bronze</a>
           
-            <a href="/tags/12cSQL基礎/" rel="tag"># 12cSQL基礎</a>
+            <a href="/tags/12cSQL/" rel="tag"># 12cSQL</a>
           
         </div>
       
@@ -528,8 +608,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/4plus1/2018/12cSql01/" rel="next" title="12cSQL基礎">
-                <i class="fa fa-chevron-left"></i> 12cSQL基礎
+              <a href="/4plus1/2018/12cSql01/" rel="next" title="12cSQL">
+                <i class="fa fa-chevron-left"></i> 12cSQL
               </a>
             
           </div>
@@ -585,8 +665,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -686,6 +775,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#リレーショナルデータベースの概要"><span class="nav-text">リレーショナルデータベースの概要</span></a></li></ol><li class="nav-item nav-level-4"><a class="nav-link" href="#SELECT文の使用によるデータの取得"><span class="nav-text">SELECT文の使用によるデータの取得</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -719,9 +824,18 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.6.0</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.6.0</div>
 
 
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/7.1.2/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
 
 
         
@@ -811,6 +925,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.6.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.6.0"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=6.6.0"></script>
