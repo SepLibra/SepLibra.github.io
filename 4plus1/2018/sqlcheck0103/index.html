@@ -108,19 +108,19 @@
 
 
 
-  <meta name="description" content="12cSQL・学習チェック     第01章.リレーショナルデータベースの概要  第02章.SELECT文の使用によるデータの取得  第章.">
+  <meta name="description" content="12cSQL・学習チェック第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
 <meta name="keywords" content="Bronze,12cSQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学習チェック01-03">
 <meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/sqlcheck0103/index.html">
 <meta property="og:site_name" content="SepLibra">
-<meta property="og:description" content="12cSQL・学習チェック     第01章.リレーショナルデータベースの概要  第02章.SELECT文の使用によるデータの取得  第章.">
+<meta property="og:description" content="12cSQL・学習チェック第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://seplibra.github.io/images/2018/12/erdiagram.png">
-<meta property="og:updated_time" content="2018-12-19T04:03:48.033Z">
+<meta property="og:updated_time" content="2018-12-19T11:41:24.663Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学習チェック01-03">
-<meta name="twitter:description" content="12cSQL・学習チェック     第01章.リレーショナルデータベースの概要  第02章.SELECT文の使用によるデータの取得  第章.">
+<meta name="twitter:description" content="12cSQL・学習チェック第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
 <meta name="twitter:image" content="https://seplibra.github.io/images/2018/12/erdiagram.png">
 
 
@@ -429,7 +429,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-19 12:03:48" itemprop="dateModified" datetime="2018-12-19T12:03:48+08:00">2018-12-19</time>
+                <time title="Modified: 2018-12-19 19:41:24" itemprop="dateModified" datetime="2018-12-19T19:41:24+08:00">2018-12-19</time>
               
             
           </span>
@@ -487,11 +487,7 @@
       
 
       
-        <p><strong>12cSQL・学習チェック</strong></p>
-<blockquote>
-</blockquote>
-<p>  第01章.リレーショナルデータベースの概要<br>  第02章.SELECT文の使用によるデータの取得<br>  第章.</p>
-<a id="more"></a>
+        <p><strong>12cSQL・学習チェック</strong><br><div class="note info"><p>第01章　リレーショナルデータベースの概要<br>第02章　SELECT文の使用によるデータの取得<br>第03章　データ制限とソート</p></div><br><a id="more"></a></p>
 <h5 id="リレーショナルデータベースの概要"><a href="#リレーショナルデータベースの概要" class="headerlink" title="リレーショナルデータベースの概要"></a>リレーショナルデータベースの概要</h5><ul>
 <li>データ構造が定義されたメソッドが組み込まれているデータベースは何か<blockquote>
 <p>オブジェクト型リレーショナルデータベース（OODB）モデル</p>
@@ -550,7 +546,7 @@
 <li>DCL（データ<strong>制御</strong>言語）<blockquote>
 <p>Data Control Language:データベースに対するアクセル権の付与や取消を行う</p>
 <blockquote>
-<p> GRANT<em><br>  REVOKE</em></p>
+<p> GRANT*<br>  REVOKE*</p>
 </blockquote>
 </blockquote>
 </li>
@@ -560,15 +556,68 @@
 <p> COMMIT<br>  ROLLBACK<br>  SAVEPOINT</p>
 </blockquote>
 </blockquote>
-<h4 id="SELECT文の使用によるデータの取得"><a href="#SELECT文の使用によるデータの取得" class="headerlink" title="SELECT文の使用によるデータの取得"></a>SELECT文の使用によるデータの取得</h4></li>
-<li><code>SELECT</code>句に指定できるものは何か</li>
-<li><code>SELECT</code>句に式を指定した場合の見出しはどのようになるか</li>
-<li><code>SELECT name AS &quot;名前&quot; FROM employees;</code>としたときに、列の見出しはどのようになるか</li>
-<li>列別名を二重引用符で囲むことによってどのような見出しを作ることができるか</li>
-<li>文字を連結する演算子は何か</li>
-<li>出力結果から列の値の重複を省きたい場合はどのようなキーワードを使用するか</li>
-<li>１つの<code>SELECT</code>句に<code>DISTINCT</code>キーワードは何回記述できるか</li>
-<li><code>500+salary*12</code>と<code>(500+salary)*12</code>の結果は同じか</li>
+</li>
+</ul>
+<h5 id="SELECT文の使用によるデータの取得"><a href="#SELECT文の使用によるデータの取得" class="headerlink" title="SELECT文の使用によるデータの取得"></a>SELECT文の使用によるデータの取得</h5><ul>
+<li><code>SELECT</code>句に指定できるものは何か<blockquote>
+<p>列名、式、列別名、定数、表のすべての列「*」</p>
+</blockquote>
+</li>
+<li><code>SELECT</code>句に式を指定した場合の見出しはどのようになるか<blockquote>
+<p>式そのものが見出しとして表示されます</p>
+</blockquote>
+</li>
+<li><code>SELECT name AS &quot;名前&quot; FROM employees;</code>としたときに、列の見出しはどのようになるか<blockquote>
+<p>「名前」となる</p>
+</blockquote>
+</li>
+<li>列別名を二重引用符で囲むことによってどのような見出しを作ることができるか<blockquote>
+<p>スペースを含む<br>大文字小文字を区別する<br>数字や記号で開始する<br>など命名規則に反した見出しを付けることができる</p>
+</blockquote>
+</li>
+<li>文字を連結する演算子は何か<blockquote>
+<p>「||」<br>連結演算子「||」で、列を、他の列まだ定数（リテラル）と連結させた文字式を作ることができます</p>
+</blockquote>
+</li>
+<li>出力結果から列の値の重複を省きたい場合はどのようなキーワードを使用するか<blockquote>
+<p>DISTINCT　キーワード</p>
+</blockquote>
+</li>
+<li>１つの<code>SELECT</code>句に<code>DISTINCT</code>キーワードは何回記述できるか<blockquote>
+<p>１回のみ</p>
+</blockquote>
+</li>
+<li><code>DISTINCT</code>キーワードは<code>SELECT</code>句のどの位置に指定するか<blockquote>
+<p>SELECTの直後<br>指定した列の組み合わせで重複した値を持つ行を一意にして表示する</p>
+</blockquote>
+</li>
+<li><code>500+salary*12</code>と<code>(500+salary)*12</code>の結果は同じか<blockquote>
+<p>異なります</p>
+</blockquote>
+</li>
+<li>定数（リテラル）&amp;代替引用符（q）演算子<blockquote>
+<p>リテラルとして、単一引用符（’）を扱う場合は代替引用符（q）演算子を使用するか、または単一引用符（’）を追加する<br>代替引用符（q）演算子は、リテラルの範囲を示す記号として<code>[]</code>以外に<code>{}、()、&lt;&gt;</code>など対の記号やシングルバイト文字を使用できる</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="データ制限とソート"><a href="#データ制限とソート" class="headerlink" title="データ制限とソート"></a>データ制限とソート</h5><ul>
+<li><code>SELECT</code>句で指定した列別名を<code>WHERE</code>句で使用できるか</li>
+<li><code>SELECT</code>句で指定した列別名を<code>ORDER BY</code>句で使用できるか</li>
+<li><code>WHERE salary BETWEEN 10000 AND 15000</code>を<code>AND/OR</code>論理演算子で書き換えるとどうなるか</li>
+<li><code>WHERE department_id IN(10, 20)</code>を<code>AND/OR</code>論理演算子で書き換えるとどうなるか</li>
+<li>先頭が<code>K</code>で始まる名前を検索するときに使用する演算子は何か</li>
+<li><code>LIKE</code>演算子で使用できるワイルカード記号は何か</li>
+<li><code>LIKE</code>演算子を使用して文字列中の<code>％</code>または<code>_</code>を検索するときのオプションは何か</li>
+<li>デフォルトの行の並べ替え順は昇順/降順のどちらか</li>
+<li>出力するときの行を降順に並べ替えるキーワードは何か</li>
+<li><code>NULL</code>が含まれる列の行を並べ替えた場合、デフォルトで<code>NULL</code>は先頭/末尾のどちらに表示されるか</li>
+<li><code>NULL</code>の表示位置を制限するキーワードは何か</li>
+<li><code>ORDER BY 2 DESC, 1</code>の２や１の意味は何か</li>
+<li>出力結果を制限するオプションは何か</li>
+<li><code>FETCH FIRST n ONLY</code> と <code>FETCH FIRST n WITH TIES</code> の違いは何か</li>
+<li><code>OFFSET 3 ROWS FETCH NEXT 5 ROWS ONLY</code>と指定した場合に制限される出力行は同のようなものか</li>
+<li><code>SQL*Plus</code>の<code>DEFINE</code>コマンドで置換変数の値をセットしておくととうなるか</li>
+<li>置換変数（<code>&amp;&amp;</code>）を使用するとどうなるか</li>
 </ul>
 
       
@@ -784,7 +833,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#リレーショナルデータベースの概要"><span class="nav-text">リレーショナルデータベースの概要</span></a></li></ol><li class="nav-item nav-level-4"><a class="nav-link" href="#SELECT文の使用によるデータの取得"><span class="nav-text">SELECT文の使用によるデータの取得</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#リレーショナルデータベースの概要"><span class="nav-text">リレーショナルデータベースの概要</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#SELECT文の使用によるデータの取得"><span class="nav-text">SELECT文の使用によるデータの取得</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#データ制限とソート"><span class="nav-text">データ制限とソート</span></a></li></ol></div>
             
 
           </div>
