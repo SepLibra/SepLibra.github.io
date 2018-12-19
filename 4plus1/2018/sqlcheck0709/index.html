@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="12cSQL・学習チェック     第10章.データ操作文を使用した表の管理  第11章.データ定義言語の紹介">
+  <meta name="description" content="12cSQL・学習チェック     第章.">
 <meta name="keywords" content="Bronze,12cSQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学習チェック10-11">
-<meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/12cSqlP1011/index.html">
+<meta property="og:title" content="学習チェック③">
+<meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/sqlcheck0709/index.html">
 <meta property="og:site_name" content="SepLibra">
-<meta property="og:description" content="12cSQL・学習チェック     第10章.データ操作文を使用した表の管理  第11章.データ定義言語の紹介">
+<meta property="og:description" content="12cSQL・学習チェック     第章.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-18T08:13:45.576Z">
+<meta property="og:updated_time" content="2018-12-18T07:17:11.880Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学習チェック10-11">
-<meta name="twitter:description" content="12cSQL・学習チェック     第10章.データ操作文を使用した表の管理  第11章.データ定義言語の紹介">
+<meta name="twitter:title" content="学習チェック③">
+<meta name="twitter:description" content="12cSQL・学習チェック     第章.">
 
 
 
 
 
 
-  <link rel="canonical" href="https://SepLibra.github.io/4plus1/2018/12cSqlP1011/">
+  <link rel="canonical" href="https://SepLibra.github.io/4plus1/2018/sqlcheck0709/">
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>学習チェック10-11 | SepLibra</title>
+  <title>学習チェック③ | SepLibra</title>
   
 
 
@@ -368,7 +368,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://SepLibra.github.io/4plus1/2018/12cSqlP1011/">
+    <link itemprop="mainEntityOfPage" href="https://SepLibra.github.io/4plus1/2018/sqlcheck0709/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hiroshi">
@@ -385,7 +385,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">学習チェック10-11
+          <h1 class="post-title" itemprop="name headline">学習チェック③
               
             
           </h1>
@@ -410,7 +410,7 @@
                 
               
 
-              <time title="Created: 2018-12-18 10:11:00 / Modified: 16:13:45" itemprop="dateCreated datePublished" datetime="2018-12-18T10:11:00+08:00">2018-12-18</time>
+              <time title="Created: 2018-12-18 07:09:00 / Modified: 15:17:11" itemprop="dateCreated datePublished" datetime="2018-12-18T07:09:00+08:00">2018-12-18</time>
             
 
             
@@ -476,95 +476,8 @@
         <p><strong>12cSQL・学習チェック</strong></p>
 <blockquote>
 </blockquote>
-<p>  第10章.データ操作文を使用した表の管理<br>  第11章.データ定義言語の紹介</p>
+<p>  第章.</p>
 <a id="more"></a>
-<h5 id="データ操作文を使用した表の管理"><a href="#データ操作文を使用した表の管理" class="headerlink" title="データ操作文を使用した表の管理"></a>データ操作文を使用した表の管理</h5><ul>
-<li>他の表の行だけをコピーしたいとき、どんなコマンドを使用するか<br>-</li>
-</ul>
-<h5 id="データ定義言語の紹介"><a href="#データ定義言語の紹介" class="headerlink" title="データ定義言語の紹介"></a>データ定義言語の紹介</h5><ul>
-<li>LONG型の特徴は何か</li>
-<li>CHARのサイズを省略するとどうなるか</li>
-<li><code>SELECT INTERVAL &#39;300&#39; MONTH FROM dual;</code>を実行するとどういう出力が行われるか</li>
-<li>列レベルでしか定義できない制約は何か</li>
-<li>SYSDATEはDEFAULTに指定できるか</li>
-<li>SYSDATEはCHECK制約で使用できるか</li>
-<li>順序名.NEXTVALはDEFAULTで使用できるか</li>
-<li>必須でかつ重複を許さない列を定義するにはどんな方法があるか</li>
-<li>外部キー制約が参照できるは何か</li>
-<li>CHECK制約でBETWEEN比較演算子は使用できるか</li>
-<li>VARCHAR2(400)の列に、最大300文字が格納されている行が存在する。サイズを500に変更できるか</li>
-<li>VARCHAR2(400)の列に、最大300文字が格納されている行が存在する。サイズを300に変更できるか</li>
-<li>表に行が存在するとき、列の削除はできるか</li>
-<li>参照している親表の行が削除されるときに、外部キーの行も削除する設定は何か</li>
-<li>表に行が存在するとき、追加する列にNOT NULL制約は定義できるか</li>
-</ul>
-<p><strong>解答</strong></p>
-<ul>
-<li>LONG型の特徴は何か<blockquote>
-<p>1つの表当たり１列しか定義できない<br>制約を指定できない<br>GROUP BY、ORDER BY句で使用できない<br>副問合せを指定して表を作成した場合コピーされない</p>
-</blockquote>
-</li>
-<li>CHARのサイズを省略するとどうなるか<blockquote>
-<p>１と定義される</p>
-</blockquote>
-</li>
-<li><code>SELECT INTERVAL &#39;300&#39; MONTH FROM dual;</code>を実行するとどういう出力が行われるか<blockquote>
-<p>+25-00（25年0ヵ月）</p>
-</blockquote>
-</li>
-<li>列レベルでしか定義できない制約は何か<blockquote>
-<p>NOT NULL 制約</p>
-</blockquote>
-</li>
-<li>SYSDATEはDEFAULTに指定できるか<blockquote>
-<p>指定できる</p>
-</blockquote>
-</li>
-<li>SYSDATEはCHECK制約で使用できるか<blockquote>
-<p>指定できない</p>
-</blockquote>
-</li>
-<li>順序名.NEXTVALはDEFAULTで使用できるか<blockquote>
-<p>指定できる</p>
-</blockquote>
-</li>
-<li>必須でかつ重複を許さない列を定義するにはどんな方法があるか<blockquote>
-<p>NOT NULL制約と一意制約を定義する<br>PRIMARY KEY制約を定義する</p>
-</blockquote>
-</li>
-<li>外部キー制約が参照できるは何か<blockquote>
-<p>主キー（PRIMARY KEY）制約 OR 一意（UNIQUE）制約</p>
-</blockquote>
-</li>
-<li>CHECK制約でBETWEEN比較演算子は使用できるか<blockquote>
-<p>できる<br>※CHECK制約には次の条件式は使用できない</p>
-<ul>
-<li>CURRVAL、NEXTVAL疑似列およびSYSDATE関数</li>
-<li>他の行の値を参照する問合せ</li>
-</ul>
-</blockquote>
-</li>
-<li>VARCHAR2(400)の列に、最大300文字が格納されている行が存在する。サイズを500に変更できるか<blockquote>
-<p>できます。既に行が存在していても可能です</p>
-</blockquote>
-</li>
-<li>VARCHAR2(400)の列に、最大300文字が格納されている行が存在する。サイズを300に変更できるか<blockquote>
-<p>できます。MAX＝300なので、変更することがができます。</p>
-</blockquote>
-</li>
-<li>表に行が存在するとき、列の削除はできるか<blockquote>
-<p>できます。表に行が追加するか否かに関わらず列の削除はできます。<br>最低1列は残す必要がある</p>
-</blockquote>
-</li>
-<li>参照している親表の行が削除されるときに、外部キーの行も削除する設定は何か<blockquote>
-<p>外部キー制約におけるON DELTE CASCADEオプション</p>
-</blockquote>
-</li>
-<li>表に行が存在するとき、追加する列にNOT NULL制約は定義できるか<blockquote>
-<p>DEFAULTと一緒に定義すればできます。<br>（DEFAULTがNULLだと定義できません）</p>
-</blockquote>
-</li>
-</ul>
 
       
     </div>
@@ -603,8 +516,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/4plus1/2018/12cSqlP0709/" rel="next" title="学習チェック③">
-                <i class="fa fa-chevron-left"></i> 学習チェック③
+              <a href="/4plus1/2018/sqlcheck0406/" rel="next" title="学習チェック②">
+                <i class="fa fa-chevron-left"></i> 学習チェック②
               </a>
             
           </div>
@@ -612,6 +525,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/4plus1/2018/sqlcheck1011/" rel="prev" title="学習チェック10-11">
+                学習チェック10-11 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -656,17 +573,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -765,22 +673,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#データ操作文を使用した表の管理"><span class="nav-text">データ操作文を使用した表の管理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#データ定義言語の紹介"><span class="nav-text">データ定義言語の紹介</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
