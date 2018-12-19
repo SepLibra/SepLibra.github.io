@@ -109,14 +109,14 @@
 
 
   <meta name="description" content="HexoとNextテーマに関して設定されているメモ内容です。">
-<meta name="keywords" content="Hexo,NexT">
+<meta name="keywords" content="Blog,HexoNext">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HexoとNextテーマの関連設定">
 <meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/Hexo-next-setting/index.html">
 <meta property="og:site_name" content="SepLibra">
 <meta property="og:description" content="HexoとNextテーマに関して設定されているメモ内容です。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-18T09:39:38.611Z">
+<meta property="og:updated_time" content="2018-12-19T14:46:25.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HexoとNextテーマの関連設定">
 <meta name="twitter:description" content="HexoとNextテーマに関して設定されているメモ内容です。">
@@ -427,7 +427,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-18 17:39:38" itemprop="dateModified" datetime="2018-12-18T17:39:38+08:00">2018-12-18</time>
+                <time title="Modified: 2018-12-19 22:46:25" itemprop="dateModified" datetime="2018-12-19T22:46:25+08:00">2018-12-19</time>
               
             
           </span>
@@ -444,14 +444,14 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Blog/" itemprop="url" rel="index"><span itemprop="name">Blog</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Hexo/NexT/" itemprop="url" rel="index"><span itemprop="name">NexT</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Blog/HexoNext/" itemprop="url" rel="index"><span itemprop="name">HexoNext</span></a></span>
 
                 
                 
@@ -536,6 +536,17 @@
 </ul>
 <div id="sequence-0"></div>
 
+<h3 id="The-Endの追加"><a href="#The-Endの追加" class="headerlink" title="The Endの追加"></a><code>The End</code>の追加</h3><ul>
+<li><p>新規ファイル<br><code>themes\next\layout\_macro\passage-end-tag.swig</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style=&quot;text-align:center;color: #555;font-size:14px;&quot;&gt;-------------The End-------------&lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>post.swig</code>に以下の内容を追加する<br><code>themes\next\layout\_macro\post.swig</code></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">位置：END POST BODYの直後</span><br><span class="line">&#123;% <span class="keyword">if</span> not is_index %&#125;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &#123;% include <span class="string">'passage-end-tag.swig'</span> %&#125;</span><br><span class="line">  &lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&#123;% endif %&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>rootの_config</code>に追加する</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># add “The End”</span><br><span class="line">passage_end_tag:</span><br><span class="line">  enabled: true</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 <p>以上</p>
 <p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
@@ -564,10 +575,23 @@ Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style
     
     
 
+
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+
+      </div>
+    
+
+
     
 
     
-       
+      
     
     
 
@@ -577,9 +601,9 @@ Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/Blog/" rel="tag"># Blog</a>
           
-            <a href="/tags/NexT/" rel="tag"># NexT</a>
+            <a href="/tags/HexoNext/" rel="tag"># HexoNext</a>
           
         </div>
       
@@ -764,7 +788,7 @@ Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#themeの変更"><span class="nav-text">themeの変更</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tagsの設定"><span class="nav-text">tagsの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#local-searchの設定"><span class="nav-text">local_searchの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#コードのCopyボタン"><span class="nav-text">コードのCopyボタン</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mermaid"><span class="nav-text">mermaid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flow"><span class="nav-text">flow</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sequence"><span class="nav-text">sequence</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#themeの変更"><span class="nav-text">themeの変更</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tagsの設定"><span class="nav-text">tagsの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#local-searchの設定"><span class="nav-text">local_searchの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#コードのCopyボタン"><span class="nav-text">コードのCopyボタン</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mermaid"><span class="nav-text">mermaid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flow"><span class="nav-text">flow</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sequence"><span class="nav-text">sequence</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#The-Endの追加"><span class="nav-text">The Endの追加</span></a></li></div>
             
 
           </div>

@@ -109,7 +109,7 @@
 
 
   <meta name="description" content="12cSQL・学習チェック第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
-<meta name="keywords" content="Bronze,12cSQL">
+<meta name="keywords" content="Bronze勉強,12cSQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学習チェック01-03">
 <meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/sqlcheck0103/index.html">
@@ -117,7 +117,7 @@
 <meta property="og:description" content="12cSQL・学習チェック第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://seplibra.github.io/images/2018/12/erdiagram.png">
-<meta property="og:updated_time" content="2018-12-19T11:41:24.663Z">
+<meta property="og:updated_time" content="2018-12-19T14:50:54.931Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学習チェック01-03">
 <meta name="twitter:description" content="12cSQL・学習チェック第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
@@ -429,7 +429,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-19 19:41:24" itemprop="dateModified" datetime="2018-12-19T19:41:24+08:00">2018-12-19</time>
+                <time title="Modified: 2018-12-19 22:50:54" itemprop="dateModified" datetime="2018-12-19T22:50:54+08:00">2018-12-19</time>
               
             
           </span>
@@ -446,14 +446,14 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Oracle/" itemprop="url" rel="index"><span itemprop="name">Oracle</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/オラクル/" itemprop="url" rel="index"><span itemprop="name">オラクル</span></a></span>
 
                 
                 
                   , 
                 
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Oracle/1Z0-061/" itemprop="url" rel="index"><span itemprop="name">1Z0-061</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/オラクル/1Z0-061/" itemprop="url" rel="index"><span itemprop="name">1Z0-061</span></a></span>
 
                 
                 
@@ -488,6 +488,7 @@
 
       
         <p><strong>12cSQL・学習チェック</strong><br><div class="note info"><p>第01章　リレーショナルデータベースの概要<br>第02章　SELECT文の使用によるデータの取得<br>第03章　データ制限とソート</p></div><br><a id="more"></a></p>
+<hr>
 <h5 id="リレーショナルデータベースの概要"><a href="#リレーショナルデータベースの概要" class="headerlink" title="リレーショナルデータベースの概要"></a>リレーショナルデータベースの概要</h5><ul>
 <li>データ構造が定義されたメソッドが組み込まれているデータベースは何か<blockquote>
 <p>オブジェクト型リレーショナルデータベース（OODB）モデル</p>
@@ -558,6 +559,7 @@
 </blockquote>
 </li>
 </ul>
+<hr>
 <h5 id="SELECT文の使用によるデータの取得"><a href="#SELECT文の使用によるデータの取得" class="headerlink" title="SELECT文の使用によるデータの取得"></a>SELECT文の使用によるデータの取得</h5><ul>
 <li><code>SELECT</code>句に指定できるものは何か<blockquote>
 <p>列名、式、列別名、定数、表のすべての列「*」</p>
@@ -600,25 +602,30 @@
 </blockquote>
 </li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">select &apos;I&apos;&apos;m &apos; || last_name</span><br><span class="line">from employees;</span><br><span class="line"></span><br><span class="line">select q&apos;[I&apos;m ]&apos; || last_name</span><br><span class="line">from employees;</span><br><span class="line"></span><br><span class="line">----出力----</span><br><span class="line">I&apos;m King</span><br><span class="line">I&apos;m Kochha</span><br></pre></td></tr></table></figure>
+<hr>
 <h5 id="データ制限とソート"><a href="#データ制限とソート" class="headerlink" title="データ制限とソート"></a>データ制限とソート</h5><ul>
-<li><code>SELECT</code>句で指定した列別名を<code>WHERE</code>句で使用できるか</li>
-<li><code>SELECT</code>句で指定した列別名を<code>ORDER BY</code>句で使用できるか</li>
+<li><p><code>SELECT</code>句で指定した列別名を<code>WHERE</code>句で使用できるか</p>
+</li>
+<li><p><code>SELECT</code>句で指定した列別名を<code>ORDER BY</code>句で使用できるか</p>
+</li>
 <li><code>WHERE salary BETWEEN 10000 AND 15000</code>を<code>AND/OR</code>論理演算子で書き換えるとどうなるか</li>
 <li><code>WHERE department_id IN(10, 20)</code>を<code>AND/OR</code>論理演算子で書き換えるとどうなるか</li>
 <li>先頭が<code>K</code>で始まる名前を検索するときに使用する演算子は何か</li>
 <li><code>LIKE</code>演算子で使用できるワイルカード記号は何か</li>
 <li><code>LIKE</code>演算子を使用して文字列中の<code>％</code>または<code>_</code>を検索するときのオプションは何か</li>
-<li>デフォルトの行の並べ替え順は昇順/降順のどちらか</li>
+<li>デフォルトの行の並べ替え順は昇順／降順のどちらか</li>
 <li>出力するときの行を降順に並べ替えるキーワードは何か</li>
-<li><code>NULL</code>が含まれる列の行を並べ替えた場合、デフォルトで<code>NULL</code>は先頭/末尾のどちらに表示されるか</li>
+<li><code>NULL</code>が含まれる列の行を並べ替えた場合、デフォルトで<code>NULL</code>は先頭／末尾のどちらに表示されるか</li>
 <li><code>NULL</code>の表示位置を制限するキーワードは何か</li>
 <li><code>ORDER BY 2 DESC, 1</code>の２や１の意味は何か</li>
 <li>出力結果を制限するオプションは何か</li>
 <li><code>FETCH FIRST n ONLY</code> と <code>FETCH FIRST n WITH TIES</code> の違いは何か</li>
-<li><code>OFFSET 3 ROWS FETCH NEXT 5 ROWS ONLY</code>と指定した場合に制限される出力行は同のようなものか</li>
-<li><code>SQL*Plus</code>の<code>DEFINE</code>コマンドで置換変数の値をセットしておくととうなるか</li>
+<li><code>OFFSET 3 ROWS FETCH NEXT 5 ROWS ONLY</code>と指定した場合に制限される出力行はどのようなものか</li>
+<li><code>SQL*Plus</code>の<code>DEFINE</code>コマンドで置換変数の値をセットしておくとどうなるか</li>
 <li>置換変数（<code>&amp;&amp;</code>）を使用するとどうなるか</li>
 </ul>
+<hr>
 
       
     </div>
@@ -629,10 +636,23 @@
     
     
 
+
+    
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #555;font-size:14px;">-------------The End-------------</div>
+    
+</div>
+
+      </div>
+    
+
+
     
 
     
-       
+      
     
     
 
@@ -642,7 +662,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Bronze/" rel="tag"># Bronze</a>
+            <a href="/tags/Bronze勉強/" rel="tag"># Bronze勉強</a>
           
             <a href="/tags/12cSQL/" rel="tag"># 12cSQL</a>
           
