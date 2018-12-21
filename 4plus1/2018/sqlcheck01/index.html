@@ -108,25 +108,27 @@
 
 
 
-  <meta name="description" content="1Z0-061・学習チェック     第章.">
+  <meta name="description" content="Bronze-12cSQL基礎・Note・第１～３章第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
 <meta name="keywords" content="Bronze,1Z0-061">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学習チェック③">
-<meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/sqlcheck0709/index.html">
+<meta property="og:title" content="Bronze-12cSQL基礎・Note・第１～３章">
+<meta property="og:url" content="https://SepLibra.github.io/4plus1/2018/sqlcheck01/index.html">
 <meta property="og:site_name" content="SepLibra&#39;s Note">
-<meta property="og:description" content="1Z0-061・学習チェック     第章.">
+<meta property="og:description" content="Bronze-12cSQL基礎・Note・第１～３章第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-21T05:34:34.653Z">
+<meta property="og:image" content="https://seplibra.github.io/images/2018/12/erdiagram.png">
+<meta property="og:updated_time" content="2018-12-21T08:56:07.323Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学習チェック③">
-<meta name="twitter:description" content="1Z0-061・学習チェック     第章.">
+<meta name="twitter:title" content="Bronze-12cSQL基礎・Note・第１～３章">
+<meta name="twitter:description" content="Bronze-12cSQL基礎・Note・第１～３章第01章　リレーショナルデータベースの概要第02章　SELECT文の使用によるデータの取得第03章　データ制限とソート">
+<meta name="twitter:image" content="https://seplibra.github.io/images/2018/12/erdiagram.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://SepLibra.github.io/4plus1/2018/sqlcheck0709/">
+  <link rel="canonical" href="https://SepLibra.github.io/4plus1/2018/sqlcheck01/">
 
 
 
@@ -136,7 +138,7 @@
   };
 </script>
 
-  <title>学習チェック③ | SepLibra's Note</title>
+  <title>Bronze-12cSQL基礎・Note・第１～３章 | SepLibra's Note</title>
   
 
 
@@ -364,7 +366,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://SepLibra.github.io/4plus1/2018/sqlcheck0709/">
+    <link itemprop="mainEntityOfPage" href="https://SepLibra.github.io/4plus1/2018/sqlcheck01/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hiroshi">
@@ -381,7 +383,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">学習チェック③
+          <h1 class="post-title" itemprop="name headline">Bronze-12cSQL基礎・Note・第１～３章
               
             
           </h1>
@@ -406,7 +408,7 @@
                 
               
 
-              <time title="Created: 2018-12-18 07:09:00" itemprop="dateCreated datePublished" datetime="2018-12-18T07:09:00+08:00">2018-12-18</time>
+              <time title="Created: 2018-12-18 01:03:00" itemprop="dateCreated datePublished" datetime="2018-12-18T01:03:00+08:00">2018-12-18</time>
             
 
             
@@ -423,7 +425,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-21 13:34:34" itemprop="dateModified" datetime="2018-12-21T13:34:34+08:00">2018-12-21</time>
+                <time title="Modified: 2018-12-21 16:56:07" itemprop="dateModified" datetime="2018-12-21T16:56:07+08:00">2018-12-21</time>
               
             
           </span>
@@ -481,11 +483,194 @@
       
 
       
-        <p><strong>1Z0-061・学習チェック</strong></p>
-<blockquote>
+        <p><strong>Bronze-12cSQL基礎・Note・第１～３章</strong><br><div class="note info"><p>第01章　リレーショナルデータベースの概要<br>第02章　SELECT文の使用によるデータの取得<br>第03章　データ制限とソート</p></div><br><a id="more"></a></p>
+<hr>
+<h5 id="リレーショナルデータベースの概要"><a href="#リレーショナルデータベースの概要" class="headerlink" title="リレーショナルデータベースの概要"></a>リレーショナルデータベースの概要</h5><ul>
+<li>データ構造が定義されたメソッドが組み込まれているデータベースは何か<blockquote>
+<p>オブジェクト型リレーショナルデータベース（OODB）モデル</p>
 </blockquote>
-<p>  第章.</p>
-<a id="more"></a>
+</li>
+<li>E.F.Coddのルールをサポートするデータベースは何か<blockquote>
+<p>リレーショナルデータベース（RDB）モデル</p>
+</blockquote>
+</li>
+<li>RDBの特徴は何か<blockquote>
+<p>データは表として格納される<br>表の構成要素は「行」と「列」である<br>複数の表の間の関係を定義できる</p>
+</blockquote>
+</li>
+<li>OODBの特徴は何か<blockquote>
+<p>データ構造が定義されたメソッドが組み込まれている<br>同じデータベースで複数のオブジェクトをサポートする<br>リレーショナル型データベースの機能を拡張しつつ完全な互換性を持つ</p>
+</blockquote>
+</li>
+<li>このERモデルはだれが考案したものか<br><img src="/images/2018/12/erdiagram.png" alt="erDiagram"><blockquote>
+<p>Peter Chen</p>
+</blockquote>
+</li>
+<li>このモデルでキー属性はどれか<blockquote>
+<p>EMPNO。<br>※EMPNOはEMPLOYEES表の行を一意に識別できるキーです。エンティティにおいて「キー」と呼ばれるものには主キー、一意キー、外部キーとありますが、単に「キー」と呼ばれた場合は主キーを指すものと考えましょう</p>
+</blockquote>
+</li>
+<li>導出属性はどれか<blockquote>
+<p>AGE<br>※AGE（年齢）は今日の日付から誕生日（BIRTHDAY）を減算することで求める（導出する）ことができるので導出属性です。</p>
+</blockquote>
+</li>
+<li>EMPOLYEESは弱いエンティティか<blockquote>
+<p>いいえ<br>他のエンティティの操作に影響を受けるエンティティを弱いエンティティといいます</p>
+</blockquote>
+</li>
+<li>コンポジット属性とはどのようなものか<blockquote>
+<p>複数の属性を組み合わせたもの</p>
+</blockquote>
+</li>
+<li>エンティティを表としたら属性は何に相当するか<blockquote>
+<p>列</p>
+</blockquote>
+</li>
+<li>DML(データ<strong>操作</strong>言語)<blockquote>
+<p>Data Manipulation Language：表の行を操作する</p>
+<blockquote>
+<p> SELECT<br>  INSERT<br>  UPDATE<br>  DELETE<br>  MERGE*</p>
+</blockquote>
+</blockquote>
+</li>
+<li>DDL(データ<strong>定義</strong>言語)<blockquote>
+<p>Data Definition Language:表などのオブジェクトを作成、変更、削除する</p>
+<blockquote>
+<p> CREATE<br>  ALTER<br>  DROP<br>  RENAME<br>  TRUNCATE<br>  COMMENT*</p>
+</blockquote>
+</blockquote>
+</li>
+<li>DCL（データ<strong>制御</strong>言語）<blockquote>
+<p>Data Control Language:データベースに対するアクセル権の付与や取消を行う</p>
+<blockquote>
+<p> GRANT*<br>  REVOKE*</p>
+</blockquote>
+</blockquote>
+</li>
+<li>トランザクション制御<blockquote>
+<p>トランザクションの確認や取消などの制御を行う</p>
+<blockquote>
+<p> COMMIT<br>  ROLLBACK<br>  SAVEPOINT</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h5 id="SELECT文の使用によるデータの取得"><a href="#SELECT文の使用によるデータの取得" class="headerlink" title="SELECT文の使用によるデータの取得"></a>SELECT文の使用によるデータの取得</h5><ul>
+<li><code>SELECT</code>句に指定できるものは何か<blockquote>
+<p>列名、式、列別名、定数、表のすべての列「*」</p>
+</blockquote>
+</li>
+<li><code>SELECT</code>句に式を指定した場合の見出しはどのようになるか<blockquote>
+<p>式そのものが見出しとして表示されます</p>
+</blockquote>
+</li>
+<li><code>SELECT name AS &quot;名前&quot; FROM employees;</code>としたときに、列の見出しはどのようになるか<blockquote>
+<p>「名前」となる</p>
+</blockquote>
+</li>
+<li>列別名を二重引用符で囲むことによってどのような見出しを作ることができるか<blockquote>
+<p>スペースを含む<br>大文字小文字を区別する<br>数字や記号で開始する<br>など命名規則に反した見出しを付けることができる</p>
+</blockquote>
+</li>
+<li>文字を連結する演算子は何か<blockquote>
+<p>「||」<br>連結演算子「||」で、列を、他の列まだ定数（リテラル）と連結させた文字式を作ることができます</p>
+</blockquote>
+</li>
+<li>出力結果から列の値の重複を省きたい場合はどのようなキーワードを使用するか<blockquote>
+<p>DISTINCT　キーワード</p>
+</blockquote>
+</li>
+<li>１つの<code>SELECT</code>句に<code>DISTINCT</code>キーワードは何回記述できるか<blockquote>
+<p>１回のみ</p>
+</blockquote>
+</li>
+<li><code>DISTINCT</code>キーワードは<code>SELECT</code>句のどの位置に指定するか<blockquote>
+<p>SELECTの直後<br>指定した列の組み合わせで重複した値を持つ行を一意にして表示する</p>
+</blockquote>
+</li>
+<li><code>500+salary*12</code>と<code>(500+salary)*12</code>の結果は同じか<blockquote>
+<p>異なります</p>
+</blockquote>
+</li>
+<li>定数（リテラル）&amp;代替引用符（q）演算子<blockquote>
+<p>リテラルとして、単一引用符（’）を扱う場合は代替引用符（q）演算子を使用するか、または単一引用符（’）を追加する<br>代替引用符（q）演算子は、リテラルの範囲を示す記号として<code>[]</code>以外に<code>{}、()、&lt;&gt;</code>など対の記号やシングルバイト文字を使用できる</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">select &apos;I&apos;&apos;m &apos; || last_name</span><br><span class="line">from employees;</span><br><span class="line"></span><br><span class="line">select q&apos;[I&apos;m ]&apos; || last_name</span><br><span class="line">from employees;</span><br><span class="line"></span><br><span class="line">----出力----</span><br><span class="line">I&apos;m King</span><br><span class="line">I&apos;m Kochha</span><br></pre></td></tr></table></figure>
+<hr>
+<h5 id="データ制限とソート"><a href="#データ制限とソート" class="headerlink" title="データ制限とソート"></a>データ制限とソート</h5><ul>
+<li><code>SELECT</code>句で指定した列別名を<code>WHERE</code>句で使用できるか<blockquote>
+<p>できない</p>
+</blockquote>
+</li>
+<li><code>SELECT</code>句で指定した列別名を<code>ORDER BY</code>句で使用できるか<blockquote>
+<p>できる</p>
+</blockquote>
+</li>
+<li><code>WHERE salary BETWEEN 10000 AND 15000</code>を<code>AND/OR</code>論理演算子で書き換えるとどうなるか<blockquote>
+<p>WHERE salary &gt;= 10000 AND salary &lt;= 15000</p>
+</blockquote>
+</li>
+<li><code>WHERE department_id IN(10, 20)</code>を<code>AND/OR</code>論理演算子で書き換えるとどうなるか<blockquote>
+<p>WHERE department_id = 10 OR department_id = 20</p>
+</blockquote>
+</li>
+<li>先頭が<code>K</code>で始まる名前を検索するときに使用する演算子は何か<blockquote>
+<p>LIKE ‘K%’</p>
+</blockquote>
+</li>
+<li><code>LIKE</code>演算子で使用できるワイルカード記号は何か<blockquote>
+<p>% or _</p>
+</blockquote>
+</li>
+<li><code>LIKE</code>演算子を使用して文字列中の<code>％</code>または<code>_</code>を検索するときのオプションは何か<blockquote>
+<p>ESCAPE 識別子</p>
+</blockquote>
+</li>
+<li>デフォルトの行の並べ替え順は昇順／降順のどちらか<blockquote>
+<p>昇順</p>
+</blockquote>
+</li>
+<li>出力するときの行を降順に並べ替えるキーワードは何か<blockquote>
+<p>DESC</p>
+</blockquote>
+</li>
+<li><code>NULL</code>が含まれる列の行を並べ替えた場合、デフォルトで<code>NULL</code>は先頭／末尾のどちらに表示されるか<blockquote>
+<p>末尾</p>
+</blockquote>
+</li>
+<li><code>NULL</code>の表示位置を制限するキーワードは何か<blockquote>
+<p>NULL FIRST or NULLS LAST</p>
+</blockquote>
+</li>
+<li><code>ORDER BY 2 DESC, 1</code>の２や１の意味は何か<blockquote>
+<p>SELECT句の列位置を表す数値。<br>２番目の列で降順に並べ替え、同じ値の中で１番目の列で昇順に並べ替え</p>
+</blockquote>
+</li>
+<li>出力結果を制限するオプションは何か<blockquote>
+<p>FETCH</p>
+</blockquote>
+</li>
+<li><code>FETCH FIRST n ONLY</code> と <code>FETCH FIRST n WITH TIES</code> の違いは何か<blockquote>
+<p><code>FETCH FIRST n ONLY</code>→先頭から５行戻す<br><code>FETCH FIRST n WITH TIES</code>→先頭から５行戻し、同値が連続する場合戻す行数を超えて表示する</p>
+</blockquote>
+</li>
+<li><code>OFFSET 3 ROWS FETCH NEXT 5 ROWS ONLY</code>と指定した場合に制限される出力行はどのようなものか<blockquote>
+<p>先頭から３行読み飛ばし、４行目から５行（8行目まで）戻す</p>
+</blockquote>
+</li>
+<li><code>SQL*Plus</code>の<code>DEFINE</code>コマンドで置換変数の値をセットしておくとどうなるか<blockquote>
+<p>セットした値が置換変数に自動に代入されるため、文実行時に値の入力は要求されない</p>
+</blockquote>
+</li>
+<li>置換変数（<code>&amp;&amp;</code>）を使用するとどうなるか<blockquote>
+<p>値の入力要求は１回だけとなる</p>
+</blockquote>
+</li>
+</ul>
+<hr>
 
       
     </div>
@@ -537,8 +722,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/4plus1/2018/sqlcheck0406/" rel="next" title="学習チェック②">
-                <i class="fa fa-chevron-left"></i> 学習チェック②
+              <a href="/4plus1/2018/sqlColumn/" rel="next" title="12cSQL基礎・コラム">
+                <i class="fa fa-chevron-left"></i> 12cSQL基礎・コラム
               </a>
             
           </div>
@@ -547,8 +732,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/4plus1/2018/sqlcheck1011/" rel="prev" title="学習チェック10-11">
-                学習チェック10-11 <i class="fa fa-chevron-right"></i>
+              <a href="/4plus1/2018/sqlcheck02/" rel="prev" title="Bronze-12cSQL基礎・Note・第０～０章">
+                Bronze-12cSQL基礎・Note・第０～０章 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -594,8 +779,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -612,7 +806,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -694,6 +888,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#リレーショナルデータベースの概要"><span class="nav-text">リレーショナルデータベースの概要</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#SELECT文の使用によるデータの取得"><span class="nav-text">SELECT文の使用によるデータの取得</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#データ制限とソート"><span class="nav-text">データ制限とソート</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
