@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="SepLibra&#39;s Note">
 <meta property="og:description" content="HexoとNextテーマに関して設定されているメモ内容です。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-21T05:23:26.289Z">
+<meta property="og:updated_time" content="2020-04-21T04:26:55.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HexoとNextテーマの関連設定">
 <meta name="twitter:description" content="HexoとNextテーマに関して設定されているメモ内容です。">
@@ -406,7 +406,7 @@
                 
               
 
-              <time title="Created: 2018-12-12 00:00:00" itemprop="dateCreated datePublished" datetime="2018-12-12T00:00:00+08:00">2018-12-12</time>
+              <time title="Created: 2018-12-12 00:00:00" itemprop="dateCreated datePublished" datetime="2018-12-12T00:00:00+09:00">2018-12-12</time>
             
 
             
@@ -423,7 +423,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-21 13:23:26" itemprop="dateModified" datetime="2018-12-21T13:23:26+08:00">2018-12-21</time>
+                <time title="Modified: 2020-04-21 13:26:55" itemprop="dateModified" datetime="2020-04-21T13:26:55+09:00">2020-04-21</time>
               
             
           </span>
@@ -532,7 +532,7 @@
 </ul>
 <div id="sequence-0"></div>
 
-<h3 id="The-Endの追加"><a href="#The-Endの追加" class="headerlink" title="The Endの追加"></a><code>The End</code>の追加</h3><ul>
+<h4 id="The-Endの追加"><a href="#The-Endの追加" class="headerlink" title="The Endの追加"></a><code>The End</code>の追加</h4><ul>
 <li><p>新規ファイル<br><code>themes\next\layout\_macro\passage-end-tag.swig</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style=&quot;text-align:center;color: #555;font-size:14px;&quot;&gt;-------------The End-------------&lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 </li>
@@ -544,7 +544,9 @@
 </li>
 </ul>
 <p>以上</p>
-<p><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start|past:>http://www.google.com[blank]
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">st=>start: Start|past:>http://www.google.com[blank]
 e=>end: End:>http://www.google.com
 op1=>operation: My Operation|past
 op2=>operation: Stuff|current
@@ -558,9 +560,7 @@ st->op1(right)->cond
 cond(yes, right)->c2
 cond(no)->sub1(left)->op1
 c2(yes)->io->e
-c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script></p>
+c2(no)->op2->e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>
 
       
     </div>
@@ -782,7 +782,7 @@ Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#themeの変更"><span class="nav-text">themeの変更</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tagsの設定"><span class="nav-text">tagsの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#local-searchの設定"><span class="nav-text">local_searchの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#コードのCopyボタン"><span class="nav-text">コードのCopyボタン</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mermaid"><span class="nav-text">mermaid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flow"><span class="nav-text">flow</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sequence"><span class="nav-text">sequence</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#The-Endの追加"><span class="nav-text">The Endの追加</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#themeの変更"><span class="nav-text">themeの変更</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#tagsの設定"><span class="nav-text">tagsの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#local-searchの設定"><span class="nav-text">local_searchの設定</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#コードのCopyボタン"><span class="nav-text">コードのCopyボタン</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mermaid"><span class="nav-text">mermaid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#flow"><span class="nav-text">flow</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sequence"><span class="nav-text">sequence</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-Endの追加"><span class="nav-text">The Endの追加</span></a></li></ol></div>
             
 
           </div>
@@ -802,7 +802,7 @@ Bob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
